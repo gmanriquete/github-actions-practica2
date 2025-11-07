@@ -28,7 +28,7 @@ jobs:
         run: echo "practica1"
 
       - name: "variables de entorno"
-      run: |
-        echo "plataforma: ${{env.platform}}"
-        echo "region: ${{env.region}}"
-        echo "region: ${{env.accountgit}}"
+        run: |
+          echo "plataforma: ${{ env.platform }}"
+          echo "region: ${{ env.region }}"
+          echo "region: ${{ env.account }}"
