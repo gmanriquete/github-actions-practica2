@@ -16,6 +16,10 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+      env:
+        platform: servicios_nube
+        region: PE-sur-2
+        account: 054
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -23,3 +27,9 @@ jobs:
     steps:
       - name: "ejer1"
         run: echo "practica1"
+
+      - name: "variables de entorno"
+      run: |
+        echo "plataforma: ${{env.platform}}"
+        echo "region: ${{env.region}}"
+        echo "region: ${{env.accountgit}}"
