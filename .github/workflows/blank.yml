@@ -24,8 +24,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: "ejer1"
-        run: echo "practica1"
+   #   - name: "ejer1"
+      #  run: echo "practica1"
       - name: "variables de entorno"
         if: ${{ env.region == 'PE-sur'}}
         run: |
