@@ -27,9 +27,9 @@ jobs:
        - name: "ejer1"
          run: echo "practica1"
           
-      - name: "variables de entorno"
-        if: ${{ env.region == 'PE-sur'}}
-        run: |
-          echo "plataforma: ${{ env.platform }}"
-          echo "region: ${{ env.region }}"
-          echo "region: ${{ env.account }}"
+       - name: "variables de entorno"
+         if: ${{ env.region == 'PE-sur'}}
+         run: |
+            echo "plataforma: ${{ env.platform }}"
+            echo "region: ${{ env.region }}"
+            echo "region: ${{ env.account }}"
